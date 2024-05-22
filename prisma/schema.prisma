@@ -1,0 +1,45 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Map {
+  id String @id @default(uuid())
+  tipo_de_compra String
+  codigo String
+  descricao String
+  fornecedor String
+  qtd_pedido Int
+  embalagem_padrao Int
+  qtd_corrigida Int
+  data_colocacao DateTime
+  semana_compra String
+  rota_cod String
+  centro String
+  rota String
+  preco_unitario Float
+  valor_total Float
+  dia_colocacao String
+  comprador String
+  de_chao Float
+  de_simulado Float
+  de_fechamento_sim_viveo Float
+  politica Int
+  forecast Int
+  estoque_chao Int
+  estoque_total Int
+  delta_forecast Int
+  estoque_projetado_c_pedido Int
+  de_com_pedido_filial Float
+
+}

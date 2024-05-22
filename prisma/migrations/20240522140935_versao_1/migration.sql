@@ -1,0 +1,32 @@
+-- CreateTable
+CREATE TABLE "Map" (
+    "id" TEXT NOT NULL,
+    "tipo_de_compra" TEXT NOT NULL,
+    "codigo" TEXT NOT NULL,
+    "descricao" TEXT NOT NULL,
+    "fornecedor" TEXT NOT NULL,
+    "qtd_pedido" INTEGER NOT NULL,
+    "embalagem_padrao" INTEGER NOT NULL,
+    "qtd_corrigida" INTEGER NOT NULL,
+    "data_colocacao" TIMESTAMP(3) NOT NULL,
+    "semana_compra" TEXT NOT NULL,
+    "rota_cod" TEXT NOT NULL,
+    "centro" TEXT NOT NULL,
+    "rota" TEXT NOT NULL,
+    "preco_unitario" DOUBLE PRECISION NOT NULL,
+    "valor_total" DOUBLE PRECISION NOT NULL,
+    "dia_colocacao" TEXT NOT NULL,
+    "comprador" TEXT NOT NULL,
+    "de_chao" DOUBLE PRECISION NOT NULL,
+    "de_simulado" DOUBLE PRECISION NOT NULL,
+    "de_fechamento_sim_viveo" DOUBLE PRECISION NOT NULL,
+    "politica" INTEGER NOT NULL,
+    "forecast" INTEGER NOT NULL,
+    "estoque_chao" INTEGER NOT NULL,
+    "estoque_total" INTEGER NOT NULL,
+    "delta_forecast" INTEGER NOT NULL,
+    "estoque_projetado_c_pedido" INTEGER NOT NULL,
+    "de_com_pedido_filial" DOUBLE PRECISION NOT NULL,
+
+    CONSTRAINT "Map_pkey" PRIMARY KEY ("id")
+);
