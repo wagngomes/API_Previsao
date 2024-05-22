@@ -1,7 +1,8 @@
-const storage = require('./multerConfig')
+const storage = require('../multerConfig')
 const multer = require('multer')
 const { PrismaClient } = require('@prisma/client')
 const { Router } = require('express')
+const express = require('express')
 
 const upload = multer({storage: storage})
 const prisma = new PrismaClient
