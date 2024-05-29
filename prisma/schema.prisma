@@ -22,7 +22,7 @@ model Map {
   qtd_pedido Int
   embalagem_padrao Int
   qtd_corrigida Int
-  data_colocacao DateTime
+  data_colocacao String
   semana_compra String
   rota_cod String
   centro String
