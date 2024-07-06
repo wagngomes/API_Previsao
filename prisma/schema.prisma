@@ -6,40 +6,16 @@
 
 generator client {
   provider = "prisma-client-js"
+  binaryTargets = ["native", "debian-openssl-3.0.x"]
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "mysql"
   url      = env("DATABASE_URL")
 }
 
 model Map {
   id String @id @default(uuid())
-  tipo_de_compra String
-  codigo String
-  descricao String
-  fornecedor String
-  qtd_pedido Int
-  embalagem_padrao Int
-  qtd_corrigida Int
-  data_colocacao String
-  semana_compra String
-  rota_cod String
-  centro String
-  rota String
-  preco_unitario Float
-  valor_total Float
-  dia_colocacao String
-  comprador String
-  de_chao Float
-  de_simulado Float
-  de_fechamento_sim_viveo Float
-  politica Int
-  forecast Int
-  estoque_chao Int
-  estoque_total Int
-  delta_forecast Int
-  estoque_projetado_c_pedido Int
-  de_com_pedido_filial Float
+ 
 
 }
